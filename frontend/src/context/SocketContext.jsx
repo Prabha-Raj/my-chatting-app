@@ -15,7 +15,8 @@ export const SocketContextProvider = ({ children }) => { // Changed to lowercase
 
     useEffect(() => {
         if (authUser) {
-            const newSocket = io("http://localhost:3000/", {
+            // const newSocket = io("http://localhost:3000/", {
+            const newSocket = io("https://chat-with-prabha.onrender.com", {
                 query: {
                     userId: authUser.user._id
                 }

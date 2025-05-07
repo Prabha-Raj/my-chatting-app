@@ -101,7 +101,7 @@ const Sidebar = ({
       } else {
         resetToChats();
       }
-    }, 500);
+    }, 1500);
 
     return () => clearTimeout(timer);
   }, [searchInput, onSearch]);
