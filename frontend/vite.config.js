@@ -11,9 +11,9 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {
-        name: 'TaxiTeaching',
-        short_name: 'TaxiApp',
-        description: 'An online teaching platform',
+        name: 'ChatWithDivu',
+        short_name: 'Divu❤',
+        description: 'An online chatting platform',
         theme_color: '#ffffff',
         background_color: '#ffffff',
         display: 'standalone',
@@ -39,7 +39,8 @@ export default defineConfig({
   server:{
     proxy:{
       '/api':{
-        target:"http://localhost:3000",
+        // target:"http://localhost:3000",
+        target:"https://chat-with-prabha.onrender.com",
         secure:false
       }
     }
