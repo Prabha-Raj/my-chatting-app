@@ -1,5 +1,5 @@
 import { getReceiverSocketId, io } from "../config/socket.js";
-import Conversation from "../models/conversation.js";
+import Conversation from "../models/Conversation.js";
 import Message from "../models/Message.js";
 import User from "../models/User.js";
 
